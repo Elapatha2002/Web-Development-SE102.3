@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tute.js"></script>
+</head>
+<body>
+    <p id="x"></p>
+    <p id="y"></p>
+
+    <script>
+
+    var sum=0;
+
+       for(let i=0;i<5;i++){
+            var userInput=prompt("Enter your mark ");
+            var num=parseInt(userInput);
+            sum+=num;
+            }
+
+        document.getElementById("x").innerHTML="Sum : "+sum
+
+
+    </script>
+</body>
+</html>

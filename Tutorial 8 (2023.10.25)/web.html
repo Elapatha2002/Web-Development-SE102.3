@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="sum"></p>
+    <p id="avg"></p>
+    <button onclick="displayGrade()">GRADE</button>
+</body>
+<script>
+    let tot=0;
+    for (let i=0;i<5;i++){
+        let userInput=prompt("Enter a number");
+        let num=parseInt(userInput);
+        tot+=num;
+    }
+    let avg=tot/5;
+    document.getElementById("sum").innerHTML="Sum     : "+tot
+    document.getElementById("avg").innerHTML="Average : "+avg
+
+    function displayGrade(){
+        if(avg>=30)
+            alert("Congratz..! You are passed")
+        else
+            alert("Sorry..! Better luck next time")
+    }
+</script>
+</html>
