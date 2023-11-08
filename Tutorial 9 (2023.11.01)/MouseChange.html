@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; justify-content:space-around; align-items: center; height: 100px;">
+    <button id="btnBlue" onmouseover="changeBgColor('blue')" onmouseleave="resetBgColor()">Blue</button>
+    <button id="btnRed">Red</button>
+    <button id="btnGreen" onmouseover="changeBgColor('green')" onmouseleave="resetBgColor()">Green</button>
+    </div>
+    
+    <script>
+        function changeBgColor(color){
+            document.body.style.backgroundColor=color;
+        }
+        function resetBgColor(){
+            document.body.style.backgroundColor="";
+        }
+        document.getElementById('btnRed').addEventListener("mouseover",()=>{
+                changeBgColor('red');
+            })
+        document.getElementById('btnRed').addEventListener("mouseleave",()=>{
+                resetBgColor();
+            })
+    
+        
+    </script>
+</body>
+
+</html>
